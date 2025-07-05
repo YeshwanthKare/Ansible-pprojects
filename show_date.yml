@@ -1,0 +1,14 @@
+- name: Stats Playbook
+  hosts: servers
+  tasks:
+    - name: Show date
+      command: date
+
+    - name: Show RAM
+      command: free -h
+
+    - name: Show disk
+      command: df -h
+
+    - name: Show uptime
+      command: uptime
